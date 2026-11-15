@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="description" content="Seu espaço pessoal para transformar pequenas ações em constância. Hábitos, metas e evolução, sem assinatura." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Ritmo" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Ritmo — Sua evolução, todos os dias</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">↗</span><span>ritmo<span class="brand-dot">.</span></span></div>
+      <div class="sidebar-label">SEU ESPAÇO</div>
+      <nav id="side-nav" class="side-nav" aria-label="Navegação principal"></nav>
+      <div class="sidebar-bottom">
+        <div class="side-inspiration"><span>✦ UM DIA DE CADA VEZ</span><p>Constância não é fazer tudo. É continuar, mesmo que aos poucos.</p></div>
+        <button class="side-settings" data-view="ajustes"><span>⚙</span> Ajustes e backup</button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div class="breadcrumb">MINHA JORNADA <span>/</span> <strong id="top-view-label">Visão geral</strong></div>
+        <div class="topbar-right"><span id="today-chip" class="date-chip"></span><div class="avatar" title="Meu espaço">R</div></div>
+      </header>
+      <div class="content" id="app-content" aria-live="polite"></div>
+      <footer class="footer">Feito para progredir no seu ritmo <span>✦</span> Seus dados ficam neste navegador.</footer>
+    </main>
+  </div>
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Navegação mobile"></nav>
+  <div id="modal-root"></div>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+  <input type="file" accept="application/json,.json" id="import-file" hidden />
+  <script src="./app.js" defer></script>
+</body>
+</html>
